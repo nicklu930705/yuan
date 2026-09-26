@@ -1,0 +1,861 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;&lt;html class="scroll-smooth" lang="zh-TW"&gt;&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="utf-8"&gt;</p>
+<p class="p1">&lt;meta content="width=device-width, initial-scale=1.0" name="viewport"&gt;</p>
+<p class="p1">&lt;title&gt;盛康後勤良品 SHENG-KANG | 營業用包材・環境衛生除蟲備品批發&lt;/title&gt;</p>
+<p class="p1">&lt;!-- Google Fonts &amp; Material Symbols --&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com" rel="preconnect"&gt;</p>
+<p class="p1">&lt;link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&amp;amp;family=Noto+Sans:wght@300;400;500;600;700&amp;amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;!-- Tailwind CSS Play CDN --&gt;</p>
+<p class="p1">&lt;script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;!-- Tailwind Theme Configuration --&gt;</p>
+<p class="p1">&lt;script id="tailwind-config"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>tailwind.config = {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>darkMode: "class",</p>
+<p class="p1"><span class="Apple-converted-space">      </span>theme: {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>extend: {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>"colors": {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"surface-linen": "#F5F3EE",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-tertiary-fixed-variant": "#005323",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-surface": "#1b1c1a",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"surface-container-high": "#eae8e4",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"error": "#ba1a1a",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-tertiary-fixed": "#00210a",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-surface-variant": "#45464d",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"border-subtle": "#F0EDE6",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"surface": "#fbf9f5",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"surface-cream": "#FAF8F5",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-primary-fixed-variant": "#3f465c",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"surface-container-low": "#f5f3ef",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"surface-bright": "#fbf9f5",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-secondary-fixed-variant": "#6e3900",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"secondary": "#904d00",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"secondary-fixed-dim": "#ffb77d",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"secondary-container": "#fe932c",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-secondary-fixed": "#2f1500",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-tertiary": "#ffffff",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"tertiary-container": "#00210a",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"inverse-surface": "#30312e",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"surface-container-lowest": "#ffffff",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"surface-container-highest": "#e4e2de",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"primary-fixed-dim": "#bec6e0",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"surface-container": "#efeeea",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"surface-variant": "#e4e2de",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"tertiary-fixed-dim": "#79db8d",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"surface-dim": "#dbdad6",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-primary-fixed": "#131b2e",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-background": "#1b1c1a",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"amber-hover": "#B45309",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-primary-container": "#7c839b",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"background": "#fbf9f5",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-tertiary-container": "#339650",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"primary-fixed": "#dae2fd",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"tertiary-fixed": "#95f8a7",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"inverse-primary": "#bec6e0",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"tertiary": "#000000",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"border-warm": "#E8E4DC",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"outline": "#76777d",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"primary-container": "#131b2e",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"primary": "#000000",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-error": "#ffffff",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"error-container": "#ffdad6",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"slate-muted": "#475569",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-error-container": "#93000a",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"inverse-on-surface": "#f2f0ed",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"surface-tint": "#565e74",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-primary": "#ffffff",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-secondary": "#ffffff",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"outline-variant": "#c6c6cd",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"secondary-fixed": "#ffdcc3",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"on-secondary-container": "#663500"</p>
+<p class="p1"><span class="Apple-converted-space">          </span>},</p>
+<p class="p1"><span class="Apple-converted-space">          </span>"borderRadius": {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"DEFAULT": "0.25rem",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"lg": "0.5rem",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"xl": "0.75rem",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"full": "9999px"</p>
+<p class="p1"><span class="Apple-converted-space">          </span>},</p>
+<p class="p1"><span class="Apple-converted-space">          </span>"spacing": {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"space-xs": "0.25rem",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"space-sm": "0.5rem",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"gutter-lg": "2.5rem",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"space-2xl": "4rem",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"space-3xl": "6rem",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"margin": "1.25rem",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"margin-lg": "5rem",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"margin-md": "2.5rem",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"space-md": "1rem",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"space-lg": "1.5rem",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"space-xl": "2.5rem",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"gutter": "1.5rem"</p>
+<p class="p1"><span class="Apple-converted-space">          </span>},</p>
+<p class="p1"><span class="Apple-converted-space">          </span>"fontFamily": {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"body-sm": ["Noto Sans", "Noto Sans TC", "sans-serif"],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"body-lg": ["Noto Sans", "Noto Sans TC", "sans-serif"],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"headline-lg": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"headline-md": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"headline-lg-mobile": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"body-md": ["Noto Sans", "Noto Sans TC", "sans-serif"],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"label-md": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"label-lg": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"display-hero-mobile": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"label-mono-num": ["Noto Sans", "monospace"],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"headline-sm": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"display-hero": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"]</p>
+<p class="p1"><span class="Apple-converted-space">          </span>},</p>
+<p class="p1"><span class="Apple-converted-space">          </span>"fontSize": {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"body-sm": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" }],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"headline-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "600" }],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"headline-md": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" }],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"body-md": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" }],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"display-hero-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"label-mono-num": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "500" }],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"display-hero": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.025em", "fontWeight": "700" }]</p>
+<p class="p1"><span class="Apple-converted-space">          </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.material-symbols-outlined {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>vertical-align: middle;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.custom-warm-shadow {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.custom-hover-shadow:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 12px 32px -4px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.03);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: translateY(-2px);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="bg-background text-on-surface antialiased selection:bg-amber-100 selection:text-amber-900 font-body-md"&gt;</p>
+<p class="p1">&lt;!-- 1. Top Announcement Bar --&gt;</p>
+<p class="p1">&lt;div class="bg-surface-linen border-b border-border-warm py-2 px-margin text-center"&gt;</p>
+<p class="p1">&lt;div class="max-w-[1360px] mx-auto flex items-center justify-center gap-3 text-on-surface-variant font-label-md text-label-md"&gt;</p>
+<p class="p1">&lt;span class="inline-flex items-center gap-1.5 text-secondary font-semibold"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[16px]"&gt;local_shipping&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>全館滿 $1,500 免運宅配</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-outline-variant"&gt;|&lt;/span&gt;</p>
+<p class="p1">&lt;span class="hidden sm:inline"&gt;營業用現貨當日發貨&lt;/span&gt;</p>
+<p class="p1">&lt;span class="hidden sm:inline text-outline-variant"&gt;|&lt;/span&gt;</p>
+<p class="p1">&lt;span class="hidden md:inline"&gt;提供三聯式發票報帳&lt;/span&gt;</p>
+<p class="p1">&lt;span class="hidden md:inline text-outline-variant"&gt;|&lt;/span&gt;</p>
+<p class="p1">&lt;span class="font-medium text-on-surface"&gt;歡迎申請免運試樣包&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- 2. Main Navigation Bar (Shared Component Anchor) --&gt;</p>
+<p class="p1">&lt;header class="w-full sticky top-0 z-50 bg-surface-cream border-b border-border-warm shadow-sm transition-all duration-200"&gt;</p>
+<p class="p1">&lt;div class="w-full px-gutter-lg max-w-[1360px] mx-auto flex items-center justify-between h-20"&gt;</p>
+<p class="p1">&lt;!-- Brand Logo Anchor --&gt;</p>
+<p class="p1">&lt;a class="flex items-center gap-3 group" href="#"&gt;</p>
+<p class="p1">&lt;div class="w-10 h-10 rounded-lg bg-primary-container text-surface flex items-center justify-center font-headline-sm font-bold tracking-wider shadow-sm group-hover:bg-primary transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>盛</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex flex-col"&gt;</p>
+<p class="p1">&lt;span class="text-headline-sm font-headline-sm font-bold text-on-surface tracking-tight leading-none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>盛康後勤良品 SHENG-KANG</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/span&gt;</p>
+<p class="p1">&lt;span class="font-label-md text-label-md text-slate-muted mt-1 tracking-wider uppercase"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Commercial Kitchen &amp;amp; Logistics</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;!-- Desktop Nav Links --&gt;</p>
+<p class="p1">&lt;nav class="hidden lg:flex items-center gap-6"&gt;</p>
+<p class="p1">&lt;a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg transition-colors" href="#products"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>全部商品</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1">&lt;a class="text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors" href="#packaging"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>營業用包材</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1">&lt;a class="text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors" href="#pest-control"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>環境衛生除蟲</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1">&lt;a class="text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors" href="#wholesale-pricing"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>大宗箱購階梯價</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1">&lt;a class="text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors" href="#knowledge"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>開店知識專欄</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1">&lt;a class="text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors" href="#sample-request"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>樣品申請</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p1">&lt;!-- Right Actions --&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1">&lt;!-- Search Field (Subtle Pill) --&gt;</p>
+<p class="p1">&lt;div class="hidden xl:flex items-center relative"&gt;</p>
+<p class="p1">&lt;input class="w-56 pl-9 pr-3 py-1.5 bg-surface border border-border-warm rounded-full text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all" placeholder="搜尋耐熱袋、餌劑、垃圾袋..." type="text"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[18px] text-slate-muted absolute left-3 pointer-events-none"&gt;search&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Cart Action with Badge --&gt;</p>
+<p class="p1">&lt;a aria-label="購物車" class="relative p-2 rounded-xl text-on-surface hover:bg-surface-linen transition-colors duration-150" href="#cart"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[24px]"&gt;shopping_cart&lt;/span&gt;</p>
+<p class="p1">&lt;span class="absolute top-1 right-1 bg-secondary text-on-secondary text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center leading-none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>0</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;!-- Support Agent --&gt;</p>
+<p class="p1">&lt;a aria-label="客服中心" class="p-2 rounded-xl text-on-surface hover:bg-surface-linen transition-colors duration-150 hidden sm:flex" href="#support"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[24px]"&gt;support_agent&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;!-- LINE Inquiry CTA Button (Warm Accent) --&gt;</p>
+<p class="p1">&lt;a class="hidden sm:inline-flex items-center gap-2 bg-[#06C755] hover:bg-[#05a847] text-white px-4 py-2 rounded-xl font-label-lg text-label-lg shadow-sm transition-all duration-150 active:scale-[0.98]" href="https://line.me" rel="noopener noreferrer" target="_blank"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[20px]"&gt;chat&lt;/span&gt;</p>
+<p class="p1">&lt;span class=""&gt;快速詢價 / LINE訂購&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/header&gt;</p>
+<p class="p1">&lt;!-- 3. Hero Section --&gt;</p>
+<p class="p1">&lt;section class="relative overflow-hidden pt-space-xl pb-space-3xl border-b border-border-warm bg-surface"&gt;</p>
+<p class="p1">&lt;!-- Subtle Ambient Accent --&gt;</p>
+<p class="p1">&lt;div class="absolute top-0 right-0 -mr-24 -mt-24 w-96 h-96 rounded-full bg-amber-50/60 blur-3xl pointer-events-none"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-stone-100/80 blur-2xl pointer-events-none"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="max-w-[1360px] mx-auto px-gutter-lg relative"&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"&gt;</p>
+<p class="p1">&lt;!-- Left Editorial Copy (7 cols) --&gt;</p>
+<p class="p1">&lt;div class="lg:col-span-7 space-y-6"&gt;</p>
+<p class="p1">&lt;div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-linen border border-border-warm text-secondary font-label-md text-label-md"&gt;</p>
+<p class="p1">&lt;span class="w-2 h-2 rounded-full bg-[#D97706] animate-pulse"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>全系列現貨倉庫每日 15:30 前結單即刻出貨</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1">&lt;h1 class="text-display-hero font-display-hero text-on-surface tracking-tight leading-tight"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>後廚備品・環境防護&lt;br class="hidden sm:inline"&gt;</p>
+<p class="p1">&lt;span class="text-slate-muted font-normal"&gt;一站購足的高效後盾&lt;/span&gt;</p>
+<p class="p1">&lt;/h1&gt;</p>
+<p class="p1">&lt;p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>嚴選食品級耐熱包材與環保署核准除蟲藥劑，為餐飲小吃、連鎖茶飲與商業空間提供最安心的後勤供應鏈。耐高溫、防刺穿、重合規，讓前線專注每一道料理。</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p1">&lt;!-- CTAs --&gt;</p>
+<p class="p1">&lt;div class="pt-2 flex flex-wrap items-center gap-4"&gt;</p>
+<p class="p1">&lt;a class="inline-flex items-center gap-2 bg-[#D97706] hover:bg-[#B45309] text-white px-6 py-3.5 rounded-xl font-label-lg text-label-lg shadow-sm transition-all duration-150 active:scale-[0.98]" href="#products"&gt;</p>
+<p class="p1">&lt;span class=""&gt;查看熱銷規格&lt;/span&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[18px]"&gt;arrow_forward&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;a class="inline-flex items-center gap-2 bg-surface-linen hover:bg-surface-cream text-on-surface border border-border-warm px-6 py-3.5 rounded-xl font-label-lg text-label-lg transition-all duration-150 active:scale-[0.98]" href="#sample-request"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[18px]"&gt;inventory_2&lt;/span&gt;</p>
+<p class="p1">&lt;span class=""&gt;免費索取袋類樣品包&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Quick Stats Tag --&gt;</p>
+<p class="p1">&lt;div class="pt-6 border-t border-border-warm flex flex-wrap items-center gap-y-3 gap-x-8 text-body-sm font-body-sm text-slate-muted"&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-2"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-secondary text-[20px]"&gt;verified&lt;/span&gt;</p>
+<p class="p1">&lt;span class="font-medium text-on-surface"&gt;99.4% 隔日送達&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-2"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-secondary text-[20px]"&gt;store&lt;/span&gt;</p>
+<p class="p1">&lt;span class="font-medium text-on-surface"&gt;1,200+ 間合作餐飲店家&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-2"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-secondary text-[20px]"&gt;task_alt&lt;/span&gt;</p>
+<p class="p1">&lt;span class="font-medium text-on-surface"&gt;100% 合規檢驗附報告&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Right Visual Presentation (5 cols) --&gt;</p>
+<p class="p1">&lt;div class="lg:col-span-5 relative"&gt;</p>
+<p class="p1">&lt;div class="relative bg-surface-cream rounded-2xl p-4 border border-border-warm custom-warm-shadow"&gt;</p>
+<p class="p1">&lt;div class="aspect-[4/3] rounded-xl overflow-hidden relative bg-stone-100"&gt;</p>
+<p class="p1">&lt;img class="w-full h-full object-cover" data-alt="An editorial warm commercial still life featuring meticulously arranged commercial restaurant supplies. Clear rolls of high-density heat-resistant food bags, stacks of neatly folded heavy-duty black refuse sacks, and minimalist tamper-resistant pest control bait stations rest upon a textured linen cloth over a pale stone countertop. Soft, diffused morning window sunlight casts delicate leafy shadows, evoking serene Japanese and Nordic lifestyle aesthetics with warm ceramic tones and deep slate accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUBHdSH-dXn3UFy41EUjqfUGWMProeloa9SeFRiAWzAQwNXZQA2VaapW2vJ4fDrl_bApxANecH-OmtcHk9nGgtaLN_Ak-jzO0eVlfVt2eDB71SwVEeWPYFcnuvfTRygL4mV0fokLv_8j0ty2wvBT_J0fT0sezXCFB1jYR20ch7DEFiXQoRGbleNLqa8RyGU4RCllAVHcLsi4avrCmckgmosMAPDgVIkTmUm65CWBR4o--3ACX_SZPqkg"&gt;</p>
+<p class="p1">&lt;!-- Certified Floating Badge --&gt;</p>
+<p class="p1">&lt;div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3.5 rounded-xl border border-border-warm shadow-md flex items-center justify-between"&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1">&lt;div class="w-9 h-9 rounded-lg bg-[#F0FDF4] border border-[#BBF7D0] text-[#15803D] flex items-center justify-center"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[20px]"&gt;health_and_safety&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;div class="text-label-md font-label-md font-bold text-on-surface"&gt;安心供貨承諾&lt;/div&gt;</p>
+<p class="p1">&lt;div class="text-body-sm font-body-sm text-slate-muted text-xs"&gt;出貨隨箱提供 SDS 及檢驗證書&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;span class="text-label-md font-label-md text-secondary font-semibold bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200/60"&gt;SGS認證&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- 4. Key Trust Badges (4 Column Grid) --&gt;</p>
+<p class="p1">&lt;section class="py-space-xl bg-surface-linen border-b border-border-warm"&gt;</p>
+<p class="p1">&lt;div class="max-w-[1360px] mx-auto px-gutter-lg"&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"&gt;</p>
+<p class="p1">&lt;!-- Badge 1 --&gt;</p>
+<p class="p1">&lt;div class="bg-surface-container-lowest p-6 rounded-2xl border border-border-warm custom-warm-shadow flex flex-col justify-between"&gt;</p>
+<p class="p1">&lt;div class="flex items-start gap-4"&gt;</p>
+<p class="p1">&lt;div class="w-12 h-12 rounded-xl bg-amber-50 text-secondary border border-amber-200/50 flex items-center justify-center shrink-0"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[26px]"&gt;verified_user&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;div class="text-label-lg font-label-lg font-bold text-on-surface mb-1"&gt;安心合規&lt;/div&gt;</p>
+<p class="p1">&lt;p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>SGS 食品級檢驗 / 環保署核准許可字號，符合衛生法規要求。</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Badge 2 --&gt;</p>
+<p class="p1">&lt;div class="bg-surface-container-lowest p-6 rounded-2xl border border-border-warm custom-warm-shadow flex flex-col justify-between"&gt;</p>
+<p class="p1">&lt;div class="flex items-start gap-4"&gt;</p>
+<p class="p1">&lt;div class="w-12 h-12 rounded-xl bg-stone-100 text-slate-muted border border-border-warm flex items-center justify-center shrink-0"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[26px]"&gt;local_shipping&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;div class="text-label-lg font-label-lg font-bold text-on-surface mb-1"&gt;滿額免運&lt;/div&gt;</p>
+<p class="p1">&lt;p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>門檻友善 $1,500 即享免運，雙北市區專車快速配送與全台宅配。</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Badge 3 --&gt;</p>
+<p class="p1">&lt;div class="bg-surface-container-lowest p-6 rounded-2xl border border-border-warm custom-warm-shadow flex flex-col justify-between"&gt;</p>
+<p class="p1">&lt;div class="flex items-start gap-4"&gt;</p>
+<p class="p1">&lt;div class="w-12 h-12 rounded-xl bg-amber-50 text-secondary border border-amber-200/50 flex items-center justify-center shrink-0"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[26px]"&gt;pace&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;div class="text-label-lg font-label-lg font-bold text-on-surface mb-1"&gt;急速發貨&lt;/div&gt;</p>
+<p class="p1">&lt;p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>常備百坪實體倉儲現貨，營業急單今日下單今日出貨，營運不中斷。</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Badge 4 --&gt;</p>
+<p class="p1">&lt;div class="bg-surface-container-lowest p-6 rounded-2xl border border-border-warm custom-warm-shadow flex flex-col justify-between"&gt;</p>
+<p class="p1">&lt;div class="flex items-start gap-4"&gt;</p>
+<p class="p1">&lt;div class="w-12 h-12 rounded-xl bg-stone-100 text-slate-muted border border-border-warm flex items-center justify-center shrink-0"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[26px]"&gt;table_rows&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;div class="text-label-lg font-label-lg font-bold text-on-surface mb-1"&gt;箱購特惠&lt;/div&gt;</p>
+<p class="p1">&lt;p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>透明階梯報價單，單店小量進貨亦可同享集團連鎖批發級優惠。</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- 5. Product Category Grid (4 Curated Cards) --&gt;</p>
+<p class="p1">&lt;section class="py-space-3xl bg-surface" id="products"&gt;</p>
+<p class="p1">&lt;div class="max-w-[1360px] mx-auto px-gutter-lg"&gt;</p>
+<p class="p1">&lt;!-- Section Header --&gt;</p>
+<p class="p1">&lt;div class="flex flex-col md:flex-row md:items-end justify-between mb-12"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;div class="text-label-md font-label-md text-secondary tracking-widest uppercase font-bold mb-2"&gt;Commercial Essentials&lt;/div&gt;</p>
+<p class="p1">&lt;h2 class="text-headline-lg font-headline-lg text-on-surface"&gt;營業專用核心品項&lt;/h2&gt;</p>
+<p class="p1">&lt;p class="text-body-md font-body-md text-on-surface-variant mt-2"&gt;全品項符合台灣餐飲安全衛生法規，規格齊全，支持小量與大宗箱購&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="mt-4 md:mt-0"&gt;</p>
+<p class="p1">&lt;a class="inline-flex items-center gap-1.5 text-label-lg font-label-lg text-on-surface hover:text-secondary font-semibold transition-colors" href="#wholesale-pricing"&gt;</p>
+<p class="p1">&lt;span class=""&gt;下載完整規格價目表 (PDF)&lt;/span&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[18px]"&gt;download&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- 4 Cards Bento-like Grid --&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"&gt;</p>
+<p class="p1">&lt;!-- Card 1: 垃圾袋 --&gt;</p>
+<p class="p1">&lt;div class="bg-surface-container-lowest rounded-2xl border border-border-warm overflow-hidden flex flex-col justify-between custom-warm-shadow custom-hover-shadow transition-all duration-200"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;div class="aspect-[4/3] bg-stone-100 relative overflow-hidden"&gt;</p>
+<p class="p1">&lt;img class="w-full h-full object-cover" data-alt="Commercial heavy-duty black refuse garbage bags folded neatly with circular bottoms displayed on a clean wooden tabletop. The setting is bright and orderly, with clean studio product lighting highlighting the puncture-resistant, thick plastic texture and clean industrial rolls with modern paper wrapping bands." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-oSSaRpf1WMtzTpSsK1W-6ET51vLfSqbbXcQNX1ex_p3xIPV1uysJkgljHzFef61D5pJYv_eGCr0sbBu0bcSeWmYJG_q4GJlhMp2WW9128lcDs2vFHveUHX-kWeDPVPbznuAmGqQSIJB-FUH26PH872soGo3NcYCT0fUHgj9nJYNhfg-sLCVSRWchNU9ISbeOpJvXgkzxzU2D6WYfNo7HaVkswK-Sjo4V6c0GcdA_0oB5PCA8d1q38Q"&gt;</p>
+<p class="p1">&lt;span class="absolute top-3 left-3 bg-stone-900/80 backdrop-blur-md text-white text-[11px] font-label-md font-semibold px-2.5 py-1 rounded-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>營業後廚必備</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="p-5"&gt;</p>
+<p class="p1">&lt;h3 class="text-headline-sm font-headline-sm text-on-surface font-bold"&gt;特厚抗撕裂垃圾袋&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>45L / 94L / 120L 承重不漏。圓底高壓無縫封口不滴湯水，營業廚餘耐磨抗刺穿。</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</p>
+<p class="p1">&lt;div class="mt-4 pt-4 border-t border-border-subtle space-y-1.5 font-label-mono-num text-body-sm"&gt;</p>
+<p class="p1">&lt;div class="flex items-center justify-between text-slate-muted"&gt;</p>
+<p class="p1">&lt;span class=""&gt;規格範圍&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-on-surface font-medium"&gt;特厚 0.045mm ~ 0.06mm&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex items-center justify-between text-slate-muted"&gt;</p>
+<p class="p1">&lt;span class=""&gt;出貨包裝&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-on-surface font-medium"&gt;50包 / 箱 (批發現貨)&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="p-5 pt-0"&gt;</p>
+<p class="p1">&lt;div class="bg-surface-linen p-3 rounded-xl border border-border-warm mb-4"&gt;</p>
+<p class="p1">&lt;span class="text-label-md font-label-md text-secondary block font-bold"&gt;批發階梯價&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-headline-sm font-headline-sm text-on-surface font-bold"&gt;最低 $38&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-body-sm font-body-sm text-slate-muted"&gt;/ 包 (箱購折算)&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;a class="w-full py-2.5 px-4 bg-primary text-white hover:bg-stone-800 rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-colors" href="#quick-order"&gt;</p>
+<p class="p1">&lt;span class=""&gt;立即選購規格&lt;/span&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[16px]"&gt;chevron_right&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Card 2: 耐熱袋 --&gt;</p>
+<p class="p1">&lt;div class="bg-surface-container-lowest rounded-2xl border border-border-warm overflow-hidden flex flex-col justify-between custom-warm-shadow custom-hover-shadow transition-all duration-200" id="packaging"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;div class="aspect-[4/3] bg-stone-100 relative overflow-hidden"&gt;</p>
+<p class="p1">&lt;img class="w-full h-full object-cover" data-alt="Stacks of semi-translucent food-grade HDPE heat-resistant plastic food bags organized neatly by size labels on a ceramic kitchen island. Warm daylight illuminates the pristine, hygienic bags with subtle embossing texture, showing food packaging used in high-end Taiwanese noodle bars and soup restaurants." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSBJ9G7F1DalXiBgCHGHFNnoGgrBIREpr40TQM7Ek6SMoDkM5NJeWUg3O4idky9oOyCQe5IjU9htFyQpQiM_m1QDrxFGOTgI8c6V_w9nfr9m-jnGBYXqO4dfSJp7rMdhi_OeFppd9NmrnSwCiZMqyOlKUC-8PnSErozwWn-9AbJ3851tKowFClPoC0VMNk77MIMyTPLSu7u1-SqQDriTUhVX0AA18P_O-kV69chvB2Thv-hBtR6ZZt6A"&gt;</p>
+<p class="p1">&lt;span class="absolute top-3 left-3 bg-[#D97706] text-white text-[11px] font-label-md font-semibold px-2.5 py-1 rounded-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>熱湯外帶專用</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="p-5"&gt;</p>
+<p class="p1">&lt;h3 class="text-headline-sm font-headline-sm text-on-surface font-bold"&gt;食品級高密度耐熱袋&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>耐熱 110°C / 防油防燙。SGS 溶出檢驗零塑化劑。4兩、6兩、半斤至3斤全規格現貨。</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</p>
+<p class="p1">&lt;div class="mt-4 pt-4 border-t border-border-subtle space-y-1.5 font-label-mono-num text-body-sm"&gt;</p>
+<p class="p1">&lt;div class="flex items-center justify-between text-slate-muted"&gt;</p>
+<p class="p1">&lt;span class=""&gt;材質證明&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-on-surface font-medium"&gt;100% 全新 HDPE 原料&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex items-center justify-between text-slate-muted"&gt;</p>
+<p class="p1">&lt;span class=""&gt;樣品支援&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-on-tertiary-fixed-variant font-medium"&gt;免費提供試裝&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="p-5 pt-0"&gt;</p>
+<p class="p1">&lt;div class="bg-surface-linen p-3 rounded-xl border border-border-warm mb-4"&gt;</p>
+<p class="p1">&lt;span class="text-label-md font-label-md text-secondary block font-bold"&gt;整箱批發優勢&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-headline-sm font-headline-sm text-on-surface font-bold"&gt;免運送達&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-body-sm font-body-sm text-slate-muted"&gt;附開立發票&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;a class="w-full py-2.5 px-4 bg-primary text-white hover:bg-stone-800 rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-colors" href="#quick-order"&gt;</p>
+<p class="p1">&lt;span class=""&gt;立即選購規格&lt;/span&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[16px]"&gt;chevron_right&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Card 3: 夾鏈袋 --&gt;</p>
+<p class="p1">&lt;div class="bg-surface-container-lowest rounded-2xl border border-border-warm overflow-hidden flex flex-col justify-between custom-warm-shadow custom-hover-shadow transition-all duration-200"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;div class="aspect-[4/3] bg-stone-100 relative overflow-hidden"&gt;</p>
+<p class="p1">&lt;img class="w-full h-full object-cover" data-alt="Clean, ultra-thick transparent zipper ziploc storage bags filled with dry chef ingredients like tea leaves and peppercorns, resting neatly on a light bone-colored surface. The dual zipper track is sharply in focus, presenting heavy-duty commercial prep-room organization with soft natural lighting and warm shadow gradients." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFYYwZXtrKri0OlMpVJe-1aPEpvmg1csR7yTT_WDxVaXsZbL0-v_R9cr005EQW7O6HwXYncpemDWQeZjFlrx-RSSeKp7iRX7gBcb995pV96B3j_z7pgpiHLdoPACsTgEPbRlA6HA6QZYYuUgyLiY06-Moc61BBbvJBT--XPR1YeqPZJOA8Qj8qgd2Fw0ZbN7vAfqk4ewBwL5v1D1VYgw__7gjBqbsy31SnZhXMw7mkVjPEFupttPtTAg"&gt;</p>
+<p class="p1">&lt;span class="absolute top-3 left-3 bg-stone-900/80 backdrop-blur-md text-white text-[11px] font-label-md font-semibold px-2.5 py-1 rounded-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>乾貨備料分裝</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="p-5"&gt;</p>
+<p class="p1">&lt;h3 class="text-headline-sm font-headline-sm text-on-surface font-bold"&gt;密封加厚夾鏈袋&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>加厚 0.08mm 緊密咬合。冷凍冷藏不脆化，防潮保鮮必備，1號至12號常備供應。</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</p>
+<p class="p1">&lt;div class="mt-4 pt-4 border-t border-border-subtle space-y-1.5 font-label-mono-num text-body-sm"&gt;</p>
+<p class="p1">&lt;div class="flex items-center justify-between text-slate-muted"&gt;</p>
+<p class="p1">&lt;span class=""&gt;密封結構&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-on-surface font-medium"&gt;加強型密合夾鏈軌道&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex items-center justify-between text-slate-muted"&gt;</p>
+<p class="p1">&lt;span class=""&gt;適用溫層&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-on-surface font-medium"&gt;-20°C ~ 60°C 冷凍保鮮&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="p-5 pt-0"&gt;</p>
+<p class="p1">&lt;div class="bg-surface-linen p-3 rounded-xl border border-border-warm mb-4"&gt;</p>
+<p class="p1">&lt;span class="text-label-md font-label-md text-secondary block font-bold"&gt;現貨庫存&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-headline-sm font-headline-sm text-on-surface font-bold"&gt;1~12號&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-body-sm font-body-sm text-slate-muted"&gt;全尺寸常備無虞&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;a class="w-full py-2.5 px-4 bg-primary text-white hover:bg-stone-800 rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-colors" href="#quick-order"&gt;</p>
+<p class="p1">&lt;span class=""&gt;立即選購規格&lt;/span&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[16px]"&gt;chevron_right&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Card 4: 環境除蟲 --&gt;</p>
+<p class="p1">&lt;div class="bg-surface-container-lowest rounded-2xl border border-border-warm overflow-hidden flex flex-col justify-between custom-warm-shadow custom-hover-shadow transition-all duration-200" id="pest-control"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;div class="aspect-[4/3] bg-stone-100 relative overflow-hidden"&gt;</p>
+<p class="p1">&lt;img class="w-full h-full object-cover" data-alt="Commercial certified pest control gel baits in clean white syringes and matte black tamper-proof rodent bait lockboxes laid out beside official compliance documentation folders on a brushed steel commercial prep station. Clean architectural lighting emphasizing professional commercial restaurant hygiene compliance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhwNxa06TvDEIbFwElog6WbOu47HhCpmhJd4pJQznBHswgZaCZeXqUfZWK0I0l7BRrmDzPKHAkrpb0mibi6ZiIIoyCxsD09kIZL6-zPINYIxiBR9Ht05MB75GGVTf-PkKBd6_PsUYorRqU7hbJD1fctYwwHRKPW3yfz9_52Uogcdnf08-zatRWTAFeBD-TjtQQh9KvZlryexq_KnUoWBHTuBoyXhAk3Gbcn051HItpW_Eso8QnE9Ea0w"&gt;</p>
+<p class="p1">&lt;span class="absolute top-3 left-3 bg-[#15803D] text-white text-[11px] font-label-md font-semibold px-2.5 py-1 rounded-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>衛福與環保稽查合格</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="p-5"&gt;</p>
+<p class="p1">&lt;h3 class="text-headline-sm font-headline-sm text-on-surface font-bold"&gt;營業用環境衛生除蟲&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>環署核准滅蟑凝膠餌劑與安全上鎖鼠餌盒。每批出貨隨附安全資料表(SDS)及稽查許可證明。</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</p>
+<p class="p1">&lt;div class="mt-4 pt-4 border-t border-border-subtle space-y-1.5 font-label-mono-num text-body-sm"&gt;</p>
+<p class="p1">&lt;div class="flex items-center justify-between text-slate-muted"&gt;</p>
+<p class="p1">&lt;span class=""&gt;許可證字號&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-on-surface font-medium"&gt;環署衛製/衛販核准字號&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex items-center justify-between text-slate-muted"&gt;</p>
+<p class="p1">&lt;span class=""&gt;法規稽查&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-on-tertiary-fixed-variant font-medium"&gt;提供出貨單與SDS備查&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="p-5 pt-0"&gt;</p>
+<p class="p1">&lt;div class="bg-surface-linen p-3 rounded-xl border border-border-warm mb-4"&gt;</p>
+<p class="p1">&lt;span class="text-label-md font-label-md text-secondary block font-bold"&gt;稽查合規保障&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-headline-sm font-headline-sm text-on-surface font-bold"&gt;100% 合法&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-body-sm font-body-sm text-slate-muted"&gt;餐飲店家免煩惱&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;a class="w-full py-2.5 px-4 bg-primary text-white hover:bg-stone-800 rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-colors" href="#quick-order"&gt;</p>
+<p class="p1">&lt;span class=""&gt;立即選購規格&lt;/span&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[16px]"&gt;chevron_right&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- 6. Special Feature Section: 透明箱購階梯價試算與樣品申請 --&gt;</p>
+<p class="p1">&lt;section class="py-space-3xl bg-surface-linen border-y border-border-warm" id="wholesale-pricing"&gt;</p>
+<p class="p1">&lt;div class="max-w-[1360px] mx-auto px-gutter-lg"&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start"&gt;</p>
+<p class="p1">&lt;!-- Left Column: Tier Pricing Calculator Table (8 cols) --&gt;</p>
+<p class="p1">&lt;div class="lg:col-span-8 bg-surface-container-lowest rounded-2xl border border-border-warm p-6 sm:p-8 custom-warm-shadow"&gt;</p>
+<p class="p1">&lt;div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-border-warm"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;span class="text-label-md font-label-md text-secondary uppercase font-bold tracking-wider"&gt;B2B Volume Discounts&lt;/span&gt;</p>
+<p class="p1">&lt;h3 class="text-headline-md font-headline-md text-on-surface mt-1"&gt;箱購階梯優惠試算&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-body-sm font-body-sm text-on-surface-variant mt-1"&gt;量大自動跳階，開立三聯式發票，全台常態配送&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="inline-flex items-center gap-2 px-3 py-1.5 bg-amber-50 border border-amber-200 text-secondary rounded-lg text-label-md font-label-md"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[18px]"&gt;verified&lt;/span&gt;</p>
+<p class="p1">&lt;span class=""&gt;獨立小店同享連鎖集團底價&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Pricing Matrix Table --&gt;</p>
+<p class="p1">&lt;div class="mt-6 overflow-x-auto"&gt;</p>
+<p class="p1">&lt;table class="w-full text-left border-collapse"&gt;</p>
+<p class="p1">&lt;thead&gt;</p>
+<p class="p1">&lt;tr class="bg-surface-cream text-slate-muted font-label-md text-label-md border-b border-border-warm"&gt;</p>
+<p class="p1">&lt;th class="py-3.5 px-4 font-semibold"&gt;階梯採購級距&lt;/th&gt;</p>
+<p class="p1">&lt;th class="py-3.5 px-4 font-semibold"&gt;折讓幅度&lt;/th&gt;</p>
+<p class="p1">&lt;th class="py-3.5 px-4 font-semibold"&gt;配送條件&lt;/th&gt;</p>
+<p class="p1">&lt;th class="py-3.5 px-4 font-semibold"&gt;付款方式&lt;/th&gt;</p>
+<p class="p1">&lt;th class="py-3.5 px-4 font-semibold text-right"&gt;試算範例 (耐熱袋箱購)&lt;/th&gt;</p>
+<p class="p1">&lt;/tr&gt;</p>
+<p class="p1">&lt;/thead&gt;</p>
+<p class="p1">&lt;tbody class="divide-y divide-border-subtle font-label-mono-num text-body-sm"&gt;</p>
+<p class="p1">&lt;tr class="hover:bg-surface-cream transition-colors"&gt;</p>
+<p class="p1">&lt;td class="py-4 px-4 font-semibold text-on-surface"&gt;1 箱起訂 (單店備貨)&lt;/td&gt;</p>
+<p class="p1">&lt;td class="py-4 px-4 text-on-surface"&gt;原價 95 折&lt;/td&gt;</p>
+<p class="p1">&lt;td class="py-4 px-4 text-slate-muted"&gt;滿 $1,500 免運宅配&lt;/td&gt;</p>
+<p class="p1">&lt;td class="py-4 px-4 text-slate-muted"&gt;信用卡 / 貨到付款&lt;/td&gt;</p>
+<p class="p1">&lt;td class="py-4 px-4 text-right font-medium text-on-surface"&gt;$1,425 / 箱&lt;/td&gt;</p>
+<p class="p1">&lt;/tr&gt;</p>
+<p class="p1">&lt;tr class="bg-amber-50/30 hover:bg-amber-50/50 transition-colors"&gt;</p>
+<p class="p1">&lt;td class="py-4 px-4 font-bold text-on-surface flex items-center gap-2"&gt;</p>
+<p class="p1">&lt;span class=""&gt;5 箱以上 (合購熱銷)&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-[10px] bg-secondary text-white px-1.5 py-0.5 rounded font-bold"&gt;人氣首選&lt;/span&gt;</p>
+<p class="p1">&lt;/td&gt;</p>
+<p class="p1">&lt;td class="py-4 px-4 font-bold text-secondary"&gt;整箱 88 折&lt;/td&gt;</p>
+<p class="p1">&lt;td class="py-4 px-4 text-on-surface"&gt;專車直送 / 免運費&lt;/td&gt;</p>
+<p class="p1">&lt;td class="py-4 px-4 text-slate-muted"&gt;ATM 轉帳 / 貨到付款&lt;/td&gt;</p>
+<p class="p1">&lt;td class="py-4 px-4 text-right font-bold text-secondary"&gt;$1,320 / 箱&lt;/td&gt;</p>
+<p class="p1">&lt;/tr&gt;</p>
+<p class="p1">&lt;tr class="hover:bg-surface-cream transition-colors"&gt;</p>
+<p class="p1">&lt;td class="py-4 px-4 font-semibold text-on-surface"&gt;20 箱以上 (連鎖品牌)&lt;/td&gt;</p>
+<p class="p1">&lt;td class="py-4 px-4 font-semibold text-on-tertiary-fixed-variant"&gt;專屬合約批發價 (約8折)&lt;/td&gt;</p>
+<p class="p1">&lt;td class="py-4 px-4 text-slate-muted"&gt;依門市分批配送 / 棧板出貨&lt;/td&gt;</p>
+<p class="p1">&lt;td class="py-4 px-4 text-slate-muted"&gt;月結 30 天 (經徵信)&lt;/td&gt;</p>
+<p class="p1">&lt;td class="py-4 px-4 text-right font-medium text-slate-muted"&gt;專人客製報價單&lt;/td&gt;</p>
+<p class="p1">&lt;/tr&gt;</p>
+<p class="p1">&lt;/tbody&gt;</p>
+<p class="p1">&lt;/table&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Bottom Notice --&gt;</p>
+<p class="p1">&lt;div class="mt-6 flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-border-subtle text-body-sm font-body-sm text-slate-muted"&gt;</p>
+<p class="p1">&lt;span class="flex items-center gap-1.5"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[18px] text-secondary"&gt;info&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>多品項可混搭計算箱數門檻（例如：3箱耐熱袋 + 2箱垃圾袋）</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/span&gt;</p>
+<p class="p1">&lt;a class="text-secondary font-semibold hover:underline inline-flex items-center gap-1" href="https://line.me"&gt;</p>
+<p class="p1">&lt;span class=""&gt;聯繫專員試算報價&lt;/span&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[16px]"&gt;arrow_outward&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Right Column: Fast Sample Request Callout Box (4 cols) --&gt;</p>
+<p class="p1">&lt;div class="lg:col-span-4 bg-surface-cream rounded-2xl border border-border-warm p-6 sm:p-8 custom-warm-shadow relative overflow-hidden" id="sample-request"&gt;</p>
+<p class="p1">&lt;div class="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center mb-5"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[24px]"&gt;mark_email_read&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;h3 class="text-headline-sm font-headline-sm text-on-surface font-bold"&gt;免費申請實體樣品包&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>小店開店不用猜尺寸與厚度！直接申請袋類全規格樣品包，寄送到店親自試裝、測漏、防油測試。</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p1">&lt;form class="mt-6 space-y-4" onsubmit="event.preventDefault(); alert('感謝您的申請！盛康客服將於 24 小時內安排樣品包寄出。');"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;label class="block text-label-md font-label-md text-on-surface mb-1 font-semibold"&gt;餐飲店家名稱&lt;/label&gt;</p>
+<p class="p1">&lt;input class="w-full px-3.5 py-2.5 bg-surface border border-border-warm rounded-xl text-body-sm font-body-sm focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary" placeholder="例如：春水食堂 / 壹號早午餐" required="" type="text"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;label class="block text-label-md font-label-md text-on-surface mb-1 font-semibold"&gt;負責人聯絡電話 / LINE ID&lt;/label&gt;</p>
+<p class="p1">&lt;input class="w-full px-3.5 py-2.5 bg-surface border border-border-warm rounded-xl text-body-sm font-body-sm focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary" placeholder="0912-345-678" required="" type="text"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;label class="block text-label-md font-label-md text-on-surface mb-1 font-semibold"&gt;欲索取試裝類別&lt;/label&gt;</p>
+<p class="p1">&lt;select class="w-full px-3.5 py-2.5 bg-surface border border-border-warm rounded-xl text-body-sm font-body-sm focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary text-on-surface"&gt;</p>
+<p class="p1">&lt;option&gt;營業用耐熱袋綜合樣品包 (4兩~3斤)&lt;/option&gt;</p>
+<p class="p1">&lt;option&gt;特厚防穿刺垃圾袋測試組&lt;/option&gt;</p>
+<p class="p1">&lt;option&gt;密封加厚夾鏈袋全尺寸組&lt;/option&gt;</p>
+<p class="p1">&lt;option&gt;全系列營業耗材樣品全套&lt;/option&gt;</p>
+<p class="p1">&lt;/select&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;label class="block text-label-md font-label-md text-on-surface mb-1 font-semibold"&gt;寄送門市地址&lt;/label&gt;</p>
+<p class="p1">&lt;input class="w-full px-3.5 py-2.5 bg-surface border border-border-warm rounded-xl text-body-sm font-body-sm focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary" placeholder="縣市市區路街段號" required="" type="text"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;button class="w-full mt-2 py-3 bg-[#D97706] hover:bg-[#B45309] text-white rounded-xl font-label-lg text-label-lg shadow-sm font-semibold transition-all duration-150 active:scale-[0.98]" type="submit"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>確認索取（免收運費）</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
+<p class="p1">&lt;p class="text-[12px] text-center text-slate-muted"&gt;每間營業登記店家限申請乙次，由新北物流中心掛號配送&lt;/p&gt;</p>
+<p class="p1">&lt;/form&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- 7. Knowledge Column (SEO &amp; Authority Section) --&gt;</p>
+<p class="p1">&lt;section class="py-space-3xl bg-surface" id="knowledge"&gt;</p>
+<p class="p1">&lt;div class="max-w-[1360px] mx-auto px-gutter-lg"&gt;</p>
+<p class="p1">&lt;div class="flex flex-col md:flex-row md:items-end justify-between mb-12"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;span class="text-label-md font-label-md text-secondary tracking-widest uppercase font-bold"&gt;Knowledge &amp;amp; Compliance&lt;/span&gt;</p>
+<p class="p1">&lt;h2 class="text-headline-lg font-headline-lg text-on-surface mt-1"&gt;後勤採購與衛生指南&lt;/h2&gt;</p>
+<p class="p1">&lt;p class="text-body-md font-body-md text-on-surface-variant mt-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>實務解答後廚備品選購盲點，助您從容通過衛生局與環保稽查</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;a class="mt-4 md:mt-0 inline-flex items-center gap-1.5 text-label-lg font-label-lg text-on-surface hover:text-secondary font-semibold transition-colors" href="#more-articles"&gt;</p>
+<p class="p1">&lt;span class=""&gt;瀏覽全部 24 篇專欄&lt;/span&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[18px]"&gt;arrow_forward&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- 3 Rich Column Articles --&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-8"&gt;</p>
+<p class="p1">&lt;!-- Article 1 --&gt;</p>
+<p class="p1">&lt;article class="bg-surface-container-lowest rounded-2xl border border-border-warm overflow-hidden flex flex-col justify-between custom-warm-shadow custom-hover-shadow transition-all duration-200"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;div class="aspect-[16/9] bg-stone-100 relative overflow-hidden"&gt;</p>
+<p class="p1">&lt;img class="w-full h-full object-cover" data-alt="An immaculate commercial stainless steel restaurant kitchen floor and drain line with a pest control specialist properly applying gel bait beneath a prep counter. Natural light reflects off the brushed steel surfaces, depicting professional hygienic standards and legal Taiwanese food sanitation protocols." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDUuRLBM6G7J0XUowQvl1ZEFCWzamk0Jk6ELHaoPyEcvNYoU2PC9IpdTL0RrtYWGp31gTneS-iRxhbxs9uDwzpN_Gs9K_0fFd7JHt4Uj7Ij2OkKGCKUCYJiDfY3X53PQyV33P66kr1fgPDKggYM9EYYbi7BckFXsB4f1UPVGbsYliEJEp8aVOKUex1VQoiBX_VIEyxi9KpCFbwPFBJlf0pwGUBp5RW33dHj96UnW9KPFK9p-79N7lYvg"&gt;</p>
+<p class="p1">&lt;span class="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-on-surface text-[11px] font-label-md font-semibold px-2.5 py-1 rounded-md border border-border-warm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>衛生合規 · 5 分鐘閱讀</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="p-6"&gt;</p>
+<p class="p1">&lt;h3 class="text-headline-sm font-headline-sm text-on-surface font-bold hover:text-secondary transition-colors cursor-pointer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>《餐飲衛生稽查必看：後廚防蟑防鼠 3 大合格施藥重點》</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-body-sm font-body-sm text-on-surface-variant mt-3 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>避免藥劑交叉污染食品接觸面，點膠法與安全餌站定位法規詳解。出示合格許可證與出廠證明，稽查免受罰。</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="p-6 pt-0"&gt;</p>
+<p class="p1">&lt;span class="inline-flex items-center gap-1 text-label-md font-label-md text-secondary font-semibold cursor-pointer hover:underline"&gt;</p>
+<p class="p1">&lt;span class=""&gt;閱讀全文&lt;/span&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[16px]"&gt;chevron_right&lt;/span&gt;</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/article&gt;</p>
+<p class="p1">&lt;!-- Article 2 --&gt;</p>
+<p class="p1">&lt;article class="bg-surface-container-lowest rounded-2xl border border-border-warm overflow-hidden flex flex-col justify-between custom-warm-shadow custom-hover-shadow transition-all duration-200"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;div class="aspect-[16/9] bg-stone-100 relative overflow-hidden"&gt;</p>
+<p class="p1">&lt;img class="w-full h-full object-cover" data-alt="Steaming hot Asian noodle soup poured into a high-density HDPE heat-resistant transparent food pouch without deformation. Warm ceramic bowls and chopsticks are in the soft blurred background, captured with cozy editorial restaurant warmth highlighting safety and thermal stability up to 110 degrees Celsius." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA99BDKsONbo8p79KErNah_qt7nRByLgBS3HibPgKA-DwJlMolGn95PPVfv2Yavwy0SQrRW353xSplwnXWZnUT9xaeuASDAaDhJxrPvGpTIpI0Z5rsmhsAb7QlQkhB1RT1E4BLTZ8fOiKYOiXh34KaKaeyqqH1FgkKqkufxYsJuO5kZ5br16V-Dvj_XeJlSre2hLW_r5LhU3jRbxBLAMsorldnjWsPULDBIfLCr-XpOMfc8HJpah9zntw"&gt;</p>
+<p class="p1">&lt;span class="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-on-surface text-[11px] font-label-md font-semibold px-2.5 py-1 rounded-md border border-border-warm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>包材指南 · 4 分鐘閱讀</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="p-6"&gt;</p>
+<p class="p1">&lt;h3 class="text-headline-sm font-headline-sm text-on-surface font-bold hover:text-secondary transition-colors cursor-pointer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>《外帶熱湯熱麵怎麼選？HDPE 耐熱袋耐溫解析》</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-body-sm font-body-sm text-on-surface-variant mt-3 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>為什麼普通塑膠袋裝熱湯容易軟化散發塑膠異味？食品級 HDPE 高密度耐熱袋原料檢驗與耐溫 110°C 的關鍵指標。</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="p-6 pt-0"&gt;</p>
+<p class="p1">&lt;span class="inline-flex items-center gap-1 text-label-md font-label-md text-secondary font-semibold cursor-pointer hover:underline"&gt;</p>
+<p class="p1">&lt;span class=""&gt;閱讀全文&lt;/span&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[16px]"&gt;chevron_right&lt;/span&gt;</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/article&gt;</p>
+<p class="p1">&lt;!-- Article 3 --&gt;</p>
+<p class="p1">&lt;article class="bg-surface-container-lowest rounded-2xl border border-border-warm overflow-hidden flex flex-col justify-between custom-warm-shadow custom-hover-shadow transition-all duration-200"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;div class="aspect-[16/9] bg-stone-100 relative overflow-hidden"&gt;</p>
+<p class="p1">&lt;img class="w-full h-full object-cover" data-alt="A precision micrometer gauge measuring the exact thickness in millimeters of a heavy-duty commercial black trash bag, placed over a warm natural linen workshop table. Surrounding accessories include neat specification charts and technical product drawings under calm diffused studio illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhks1G2-OBI6FiDdtdiUJudAn_Xid-rarftRLpyfxBqOQUZmhavv7Loedkod08N8CVlEbgaZz0IxQHokV10fkncPMxZ6OaQZg4ojuswpbVmuueyQQMvvDi-6yZ5WIHFi6lm8tbjJgzTBa3bCzUCn0GhdRIPeCD_hsLoyiIQuCbwIMilcr4Fpgua0s5OK59x71WymxZRJ1iPB1TMMYWBFyH6s4v50--xerNo5WMlr-z5KEQKQbxdZVUrA"&gt;</p>
+<p class="p1">&lt;span class="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-on-surface text-[11px] font-label-md font-semibold px-2.5 py-1 rounded-md border border-border-warm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>耗材評鑑 · 3 分鐘閱讀</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="p-6"&gt;</p>
+<p class="p1">&lt;h3 class="text-headline-sm font-headline-sm text-on-surface font-bold hover:text-secondary transition-colors cursor-pointer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>《營業用垃圾袋厚度指南：幾條厚度才不會破底漏汁？》</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/h3&gt;</p>
+<p class="p1">&lt;p class="text-body-sm font-body-sm text-on-surface-variant mt-3 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>解析 0.03mm 至 0.06mm 厚度適用情境，廚餘沉重油湯專用圓底結構剖析，大幅降低外場員工收桌清潔的漏水意外。</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="p-6 pt-0"&gt;</p>
+<p class="p1">&lt;span class="inline-flex items-center gap-1 text-label-md font-label-md text-secondary font-semibold cursor-pointer hover:underline"&gt;</p>
+<p class="p1">&lt;span class=""&gt;閱讀全文&lt;/span&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[16px]"&gt;chevron_right&lt;/span&gt;</p>
+<p class="p1">&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/article&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- 8. B2B Wholesale &amp; Brand Support Section (Callout Card) --&gt;</p>
+<p class="p1">&lt;section class="py-space-2xl bg-surface-cream border-t border-border-warm"&gt;</p>
+<p class="p1">&lt;div class="max-w-[1360px] mx-auto px-gutter-lg"&gt;</p>
+<p class="p1">&lt;div class="bg-surface-container-lowest rounded-3xl border border-border-warm p-8 md:p-12 custom-warm-shadow flex flex-col lg:flex-row items-center justify-between gap-8"&gt;</p>
+<p class="p1">&lt;div class="space-y-3 max-w-2xl"&gt;</p>
+<p class="p1">&lt;div class="inline-flex items-center gap-2 text-secondary font-label-md text-label-md font-bold"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[18px]"&gt;quick_reference&lt;/span&gt;</p>
+<p class="p1">&lt;span class=""&gt;北區實體備品倉儲・營業急單快速對接&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;h2 class="text-headline-md font-headline-md text-on-surface font-bold"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>營業備料急件？LINE 即刻專人查詢庫存</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/h2&gt;</p>
+<p class="p1">&lt;p class="text-body-md font-body-md text-on-surface-variant leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>加入官方 LINE 由後勤專員為您比對門市現有袋型規格、快速開立報價單與三聯式發票。新北三重物流倉支援自取，急用不打烊。</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-6 pt-2 font-label-md text-label-md text-slate-muted"&gt;</p>
+<p class="p1">&lt;span class="flex items-center gap-1.5"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[18px] text-on-tertiary-fixed-variant"&gt;check_circle&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>三重交流道旁 5 分鐘</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/span&gt;</p>
+<p class="p1">&lt;span class="flex items-center gap-1.5"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[18px] text-on-tertiary-fixed-variant"&gt;check_circle&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>週一至週五 08:30~18:00 現貨自取</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex flex-col sm:flex-row gap-4 shrink-0 w-full lg:w-auto"&gt;</p>
+<p class="p1">&lt;a class="inline-flex items-center justify-center gap-2.5 bg-[#06C755] hover:bg-[#05a847] text-white px-7 py-3.5 rounded-xl font-label-lg text-label-lg shadow-sm font-semibold transition-all duration-150 active:scale-[0.98]" href="https://line.me" rel="noopener noreferrer" target="_blank"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[20px]"&gt;chat&lt;/span&gt;</p>
+<p class="p1">&lt;span class=""&gt;加入 LINE @shengkang&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;a class="inline-flex items-center justify-center gap-2 bg-surface-linen hover:bg-surface border border-border-warm text-on-surface px-6 py-3.5 rounded-xl font-label-lg text-label-lg font-semibold transition-all duration-150" href="tel:0229998820"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[20px]"&gt;call&lt;/span&gt;</p>
+<p class="p1">&lt;span class=""&gt;電話洽詢 (02) 2999-8820&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- 9. Footer (Shared Component Anchor) --&gt;</p>
+<p class="p1">&lt;footer class="w-full bg-surface-linen border-t border-border-warm"&gt;</p>
+<p class="p1">&lt;div class="w-full px-gutter-lg py-space-2xl max-w-[1360px] mx-auto"&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-border-warm"&gt;</p>
+<p class="p1">&lt;!-- Col 1 &amp; 2: Brand Profile &amp; License --&gt;</p>
+<p class="p1">&lt;div class="lg:col-span-2 space-y-4"&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-2.5"&gt;</p>
+<p class="p1">&lt;div class="w-8 h-8 rounded bg-primary text-surface flex items-center justify-center font-bold text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>盛</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1">&lt;span class="text-headline-sm font-headline-sm font-bold text-on-surface"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>盛康後勤良品 SHENG-KANG</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed max-w-sm"&gt;侑安國際有限公司（You-An Commercial Logistics Co., Ltd.）專注於餐飲營業包材與專業環境衛生用藥，秉持合規、厚度實在、透明報價，做全台餐飲頭家最堅實的後勤支柱。&lt;/p&gt;</p>
+<p class="p1">&lt;div class="text-label-mono-num text-body-sm space-y-1 text-slate-muted"&gt;</p>
+<p class="p1">&lt;div class=""&gt;統一編號：&lt;span class="text-on-surface font-semibold"&gt;83521940&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class=""&gt;環保署環藥販售執照：&lt;span class="text-on-surface font-semibold"&gt;環署衛販字第 63-128 號&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Col 3: Compliance &amp; Legal Links --&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;h4 class="text-label-lg font-label-lg font-bold text-on-surface mb-4"&gt;法規與檢驗證明&lt;/h4&gt;</p>
+<p class="p1">&lt;ul class="space-y-2.5 font-body-sm text-body-sm"&gt;</p>
+<p class="p1">&lt;li class=""&gt;&lt;a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#compliance"&gt;營業用包材規格書&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class=""&gt;&lt;a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#compliance"&gt;食品級SGS檢驗報告&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class=""&gt;&lt;a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#compliance"&gt;環境用藥許可證字號&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class=""&gt;&lt;a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#compliance"&gt;三聯式發票與稅務申報說明&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class=""&gt;&lt;a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#compliance"&gt;大宗階梯採購合約&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Col 4: Wholesale Services --&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;h4 class="text-label-lg font-label-lg font-bold text-on-surface mb-4"&gt;採購與服務&lt;/h4&gt;</p>
+<p class="p1">&lt;ul class="space-y-2.5 font-body-sm text-body-sm"&gt;</p>
+<p class="p1">&lt;li class=""&gt;&lt;a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#sample-request"&gt;樣品索取政策&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class=""&gt;&lt;a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#pricing"&gt;倉庫自取預約規範&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class=""&gt;&lt;a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#faq"&gt;配送範圍與運費計算&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class=""&gt;&lt;a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#privacy"&gt;隱私權與服務條款&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class=""&gt;&lt;a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#refund"&gt;營業品項退換貨須知&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Col 5: Logistics &amp; Contact --&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;h4 class="text-label-lg font-label-lg font-bold text-on-surface mb-4"&gt;物流備品中心&lt;/h4&gt;</p>
+<p class="p1">&lt;div class="text-body-sm font-body-sm text-on-surface-variant space-y-2"&gt;</p>
+<p class="p1">&lt;p class=""&gt;新北市三重區重新路五段609巷&lt;br&gt;(盛康北區物流備品中心)&lt;/p&gt;</p>
+<p class="p1">&lt;p class="font-label-mono-num"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>電話：02-2999-8820&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>傳真：02-2999-8821</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1">&lt;p class="text-slate-muted"&gt;週一至週五 08:30 - 18:00&lt;br&gt;(例假日及國定假日公休)&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Copyright Bottom Bar --&gt;</p>
+<p class="p1">&lt;div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-body-sm font-body-sm text-slate-muted"&gt;</p>
+<p class="p1">&lt;div class=""&gt;© 2024 侑安國際有限公司 (You-An Commercial Logistics Co., Ltd.) 版權所有 統一編號：83521940 環署衛販字號：第63-128號&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-6"&gt;</p>
+<p class="p1">&lt;span class="inline-flex items-center gap-1"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[16px] text-on-tertiary-fixed-variant"&gt;lock&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>SSL 企業級高防護傳輸</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/span&gt;</p>
+<p class="p1">&lt;span class="text-outline-variant"&gt;|&lt;/span&gt;</p>
+<p class="p1">&lt;span class=""&gt;B2B 餐飲專業後勤&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;&lt;/html&gt;</p>
+</body>
+</html>
