@@ -1,0 +1,274 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="zh-TW"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>營業用包材 | 侑安國際</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS Play CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-linen": "#F5F3EE",
+            "on-tertiary-fixed-variant": "#005323",
+            "on-surface": "#1b1c1a",
+            "surface-container-high": "#eae8e4",
+            "error": "#ba1a1a",
+            "on-tertiary-fixed": "#00210a",
+            "on-surface-variant": "#45464d",
+            "border-subtle": "#F0EDE6",
+            "surface": "#fbf9f5",
+            "surface-cream": "#FAF8F5",
+            "on-primary-fixed-variant": "#3f465c",
+            "surface-container-low": "#f5f3ef",
+            "surface-bright": "#fbf9f5",
+            "on-secondary-fixed-variant": "#6e3900",
+            "secondary": "#904d00",
+            "secondary-fixed-dim": "#ffb77d",
+            "secondary-container": "#fe932c",
+            "on-secondary-fixed": "#2f1500",
+            "on-tertiary": "#ffffff",
+            "tertiary-container": "#00210a",
+            "inverse-surface": "#30312e",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-highest": "#e4e2de",
+            "primary-fixed-dim": "#bec6e0",
+            "surface-container": "#efeeea",
+            "surface-variant": "#e4e2de",
+            "tertiary-fixed-dim": "#79db8d",
+            "surface-dim": "#dbdad6",
+            "on-primary-fixed": "#131b2e",
+            "on-background": "#1b1c1a",
+            "amber-hover": "#B45309",
+            "on-primary-container": "#7c839b",
+            "background": "#fbf9f5",
+            "on-tertiary-container": "#339650",
+            "primary-fixed": "#dae2fd",
+            "tertiary-fixed": "#95f8a7",
+            "inverse-primary": "#bec6e0",
+            "tertiary": "#000000",
+            "border-warm": "#E8E4DC",
+            "outline": "#76777d",
+            "primary-container": "#131b2e",
+            "primary": "#000000",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "slate-muted": "#475569",
+            "on-error-container": "#93000a",
+            "inverse-on-surface": "#f2f0ed",
+            "surface-tint": "#565e74",
+            "on-primary": "#ffffff",
+            "on-secondary": "#ffffff",
+            "outline-variant": "#c6c6cd",
+            "secondary-fixed": "#ffdcc3",
+            "on-secondary-container": "#663500"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "gutter-lg": "2.5rem",
+            "space-2xl": "4rem",
+            "space-3xl": "6rem",
+            "margin": "1.25rem",
+            "margin-lg": "5rem",
+            "margin-md": "2.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem"
+          },
+          "fontFamily": {
+            "body-sm": ["Noto Sans", "Noto Sans TC", "sans-serif"],
+            "body-lg": ["Noto Sans", "Noto Sans TC", "sans-serif"],
+            "headline-lg": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],
+            "headline-md": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],
+            "headline-lg-mobile": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],
+            "body-md": ["Noto Sans", "Noto Sans TC", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],
+            "label-lg": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],
+            "display-hero-mobile": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],
+            "label-mono-num": ["Noto Sans", "monospace"],
+            "headline-sm": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],
+            "display-hero": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"]
+          },
+          "fontSize": {
+            "body-sm": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }],
+            "headline-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-md": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "body-md": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }],
+            "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "display-hero-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-mono-num": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }],
+            "display-hero": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.025em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-warm-shadow {
+      box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
+    }
+    .custom-hover-shadow:hover {
+      box-shadow: 0 12px 32px -4px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.03);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-amber-100 selection:text-amber-900 font-body-md">
+<!-- 1. Top Announcement Bar -->
+<div class="bg-surface-linen border-b border-border-warm py-2 px-margin text-center">
+<div class="max-w-[1360px] mx-auto flex items-center justify-center gap-3 text-on-surface-variant font-label-md text-label-md">
+<span class="inline-flex items-center gap-1.5 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+        全館滿 $1,500 免運宅配
+      </span>
+<span class="text-outline-variant">|</span>
+<span class="hidden sm:inline">營業用現貨當日發貨</span>
+<span class="hidden sm:inline text-outline-variant">|</span>
+<span class="hidden md:inline">提供三聯式發票報帳</span>
+<span class="hidden md:inline text-outline-variant">|</span>
+<span class="font-medium text-on-surface">歡迎申請免運試樣包</span>
+</div>
+</div>
+<!-- 2. Main Navigation Bar -->
+<header class="w-full sticky top-0 z-50 bg-surface-cream border-b border-border-warm shadow-sm transition-all duration-200">
+<div class="w-full px-gutter-lg max-w-[1360px] mx-auto flex items-center justify-between h-20">
+<!-- Brand Logo Anchor -->
+<a class="flex items-center gap-3 group" href="index.html">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-surface flex items-center justify-center font-headline-sm font-bold tracking-wider shadow-sm group-hover:bg-primary transition-colors">
+          侑
+        </div>
+<div class="flex flex-col">
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface tracking-tight leading-none">
+            侑安國際
+          </span>
+<span class="font-label-md text-label-md text-slate-muted mt-1 tracking-wider uppercase">
+            Commercial Kitchen &amp; Logistics
+          </span>
+</div>
+</a>
+<!-- Desktop Nav Links -->
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors" href="index.html#products">
+          全部商品
+        </a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg transition-colors" href="packaging.html">
+          營業用包材
+        </a>
+<a class="text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors" href="pest-control.html">
+          環境衛生除蟲
+        </a>
+<a class="text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors" href="wholesale-pricing.html">
+          大宗箱購階梯價
+        </a>
+<a class="text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors" href="knowledge.html">
+          開店知識專欄
+        </a>
+<a class="text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors" href="sample-request.html">
+          樣品申請
+        </a>
+</nav>
+<!-- Right Actions -->
+<div class="flex items-center gap-3">
+<div class="hidden xl:flex items-center relative">
+<input class="w-56 pl-9 pr-3 py-1.5 bg-surface border border-border-warm rounded-full text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all" placeholder="搜尋..." type="text">
+</div>
+<a aria-label="購物車" class="relative p-2 rounded-xl text-on-surface hover:bg-surface-linen transition-colors duration-150" href="index.html#cart">
+<span class="material-symbols-outlined">shopping_cart</span>
+</a>
+</div>
+</div>
+</header>
+
+<main class="py-space-3xl bg-surface">
+  <div class="max-w-[1360px] mx-auto px-gutter-lg">
+    <div class="mb-12">
+      <h1 class="text-display-hero-mobile md:text-display-hero font-display-hero text-on-surface">營業用包材</h1>
+      <p class="text-body-lg font-body-lg text-on-surface-variant mt-4 max-w-2xl">侑安國際提供全系列食品級營業用包材，從耐熱袋、夾鏈袋到垃圾袋，皆符合法規要求，厚度實在，是餐飲店家的首選後勤夥伴。</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- 食品級高密度耐熱袋 -->
+      <div class="bg-surface-container-lowest rounded-2xl border border-border-warm overflow-hidden flex flex-col justify-between custom-warm-shadow custom-hover-shadow transition-all duration-200">
+        <div>
+          <div class="aspect-[4/3] bg-stone-100 relative overflow-hidden">
+            <img class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSBJ9G7F1DalXiBgCHGHFNnoGgrBIREpr40TQM7Ek6SMoDkM5NJeWUg3O4idky9oOyCQe5IjU9htFyQpQiM_m1QDrxFGOTgI8c6V_w9nfr9m-jnGBYXqO4dfSJp7rMdhi_OeFppd9NmrnSwCiZMqyOlKUC-8PnSErozwWn-9AbJ3851tKowFClPoC0VMNk77MIMyTPLSu7u1-SqQDriTUhVX0AA18P_O-kV69chvB2Thv-hBtR6ZZt6A">
+            <span class="absolute top-3 left-3 bg-[#D97706] text-white text-[11px] font-label-md font-semibold px-2.5 py-1 rounded-md">熱湯外帶專用</span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-headline-sm font-headline-sm text-on-surface font-bold">食品級高密度耐熱袋</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">耐熱 110°C / 防油防燙。SGS 溶出檢驗零塑化劑。4兩、6兩、半斤至3斤全規格現貨。</p>
+          </div>
+        </div>
+        <div class="p-5 pt-0">
+          <a class="w-full py-2.5 px-4 bg-primary text-white hover:bg-stone-800 rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-colors" href="index.html#quick-order">
+            <span>查看規格</span>
+            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 密封加厚夾鏈袋 -->
+      <div class="bg-surface-container-lowest rounded-2xl border border-border-warm overflow-hidden flex flex-col justify-between custom-warm-shadow custom-hover-shadow transition-all duration-200">
+        <div>
+          <div class="aspect-[4/3] bg-stone-100 relative overflow-hidden">
+            <img class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFYYwZXtrKri0OlMpVJe-1aPEpvmg1csR7yTT_WDxVaXsZbL0-v_R9cr005EQW7O6HwXYncpemDWQeZjFlrx-RSSeKp7iRX7gBcb995pV96B3j_z7pgpiHLdoPACsTgEPbRlA6HA6QZYYuUgyLiY06-Moc61BBbvJBT--XPR1YeqPZJOA8Qj8qgd2Fw0ZbN7vAfqk4ewBwL5v1D1VYgw__7gjBqbsy31SnZhXMw7mkVjPEFupttPtTAg">
+            <span class="absolute top-3 left-3 bg-stone-900/80 backdrop-blur-md text-white text-[11px] font-label-md font-semibold px-2.5 py-1 rounded-md">乾貨備料分裝</span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-headline-sm font-headline-sm text-on-surface font-bold">密封加厚夾鏈袋</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">加厚 0.08mm 緊密咬合。冷凍冷藏不脆化，防潮保鮮必備，1號至12號常備供應。</p>
+          </div>
+        </div>
+        <div class="p-5 pt-0">
+          <a class="w-full py-2.5 px-4 bg-primary text-white hover:bg-stone-800 rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-colors" href="index.html#quick-order">
+            <span>查看規格</span>
+            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="w-full bg-surface-linen border-t border-border-warm">
+  <div class="w-full px-gutter-lg py-space-2xl max-w-[1360px] mx-auto text-center">
+    <div class="flex flex-col items-center gap-4">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded bg-primary text-surface flex items-center justify-center font-bold text-sm">侑</div>
+        <span class="text-headline-sm font-headline-sm font-bold text-on-surface">侑安國際</span>
+      </div>
+      <p class="text-body-sm font-body-sm text-on-surface-variant">© 2026 侑安國際有限公司 You-An Commercial Logistics Co., Ltd.</p>
+      <div class="flex gap-6 mt-4">
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="index.html">首頁</a>
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="packaging.html">營業用包材</a>
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="pest-control.html">環境衛生除蟲</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body></html>
