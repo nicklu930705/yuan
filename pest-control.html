@@ -103,11 +103,40 @@
             "label-mono-num": ["Noto Sans", "monospace"],
             "headline-sm": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],
             "display-hero": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"]
+          },
+          "fontSize": {
+            "body-sm": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }],
+            "headline-lg": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-md": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "body-md": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }],
+            "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "display-hero-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-mono-num": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }],
+            "display-hero": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.025em", "fontWeight": "700" }]
           }
         }
       }
     }
   </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-warm-shadow {
+      box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
+    }
+    .custom-hover-shadow:hover {
+      box-shadow: 0 12px 32px -4px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.03);
+      transform: translateY(-2px);
+    }
+  </style>
 </head>
 <body class="bg-background text-on-surface antialiased selection:bg-amber-100 selection:text-amber-900 font-body-md">
 <header class="w-full sticky top-0 z-50 bg-surface-cream border-b border-border-warm shadow-sm transition-all duration-200">
@@ -134,37 +163,84 @@
       <p class="text-body-lg font-body-lg text-on-surface-variant mt-4 max-w-2xl">侑安國際提供專業營業用除蟲備品，協助餐飲店家建立標準化衛生防線，所有品項皆符合環保署規範。</p>
     </div>
 
-    <div class="bg-surface-container-lowest rounded-2xl border border-border-warm overflow-hidden custom-warm-shadow p-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- 滅蟑凝膠餌劑 -->
+      <div class="bg-surface-container-lowest rounded-2xl border border-border-warm overflow-hidden flex flex-col justify-between custom-warm-shadow custom-hover-shadow transition-all duration-200">
         <div>
-          <div class="aspect-[4/3] bg-stone-100 rounded-xl overflow-hidden">
-            <img class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhwNxa06TvDEIbFwElog6WbOu47HhCpmhJd4pJQznBHswgZaCZeXqUfZWK0I0l7BRrmDzPKHAkrpb0mibi6ZiIIoyCxsD09kIZL6-zPINYIxiBR9Ht05MB75GGVTf-PkKBd6_PsUYorRqU7hbJD1fctYwwHRKPW3yfz9_52Uogcdnf08-zatRWTAFeBD-TjtQQh9KvZlryexq_KnUoWBHTuBoyXhAk3Gbcn051HItpW_Eso8QnE9Ea0w">
+          <div class="aspect-[4/3] bg-stone-100 relative overflow-hidden">
+            <img class="w-full h-full object-contain" src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=professional+cockroach+gel+bait+syringe+in+a+clean+commercial+kitchen+environment+close-up&image_size=landscape_4_3">
+            <span class="absolute top-3 left-3 bg-[#15803D] text-white text-[11px] font-label-md font-semibold px-2.5 py-1 rounded-md">稽查合格藥劑</span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-headline-sm font-headline-sm text-on-surface font-bold">滅蟑凝膠餌劑 (營業用)</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">環署核准字號。針對連鎖餐飲開發，點膠式設計不污染環境，有效連鎖滅蟑。</p>
           </div>
         </div>
+        <div class="p-5 pt-0">
+          <a class="w-full py-2.5 px-4 bg-primary text-white hover:bg-stone-800 rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-colors" href="index.html#quick-order">
+            <span>立即選購</span>
+            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 上鎖式安全鼠餌盒 -->
+      <div class="bg-surface-container-lowest rounded-2xl border border-border-warm overflow-hidden flex flex-col justify-between custom-warm-shadow custom-hover-shadow transition-all duration-200">
         <div>
-          <span class="bg-[#15803D] text-white text-[12px] font-bold px-3 py-1.5 rounded-full">衛福與環保稽查合格</span>
-          <h2 class="text-headline-lg font-headline-lg text-on-surface mt-4">營業用環境衛生除蟲</h2>
-          <p class="text-body-md font-body-md text-on-surface-variant mt-4 leading-relaxed">環署核准滅蟑凝膠餌劑與安全上鎖鼠餌盒。每批出貨隨附安全資料表(SDS)及稽查許可證明，讓您從容應對各項衛生檢查。</p>
-          <ul class="mt-8 space-y-4">
-            <li class="flex items-center gap-3 text-on-surface">
-              <span class="material-symbols-outlined text-[#15803D]">verified</span>
-              <span>環署衛製/衛販核准字號</span>
-            </li>
-            <li class="flex items-center gap-3 text-on-surface">
-              <span class="material-symbols-outlined text-[#15803D]">verified</span>
-              <span>隨貨附上 SDS 安全資料表</span>
-            </li>
-            <li class="flex items-center gap-3 text-on-surface">
-              <span class="material-symbols-outlined text-[#15803D]">verified</span>
-              <span>專業顧問協助法規諮詢</span>
-            </li>
-          </ul>
-          <div class="mt-10">
-            <a class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold transition-all hover:bg-stone-800" href="index.html#quick-order">
-              <span>立即選購</span>
-              <span class="material-symbols-outlined">shopping_cart</span>
-            </a>
+          <div class="aspect-[4/3] bg-stone-100 relative overflow-hidden">
+            <img class="w-full h-full object-contain" src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=black+matte+plastic+rodent+bait+station+lockbox+placed+discreetly+against+a+warehouse+wall&image_size=landscape_4_3">
+            <span class="absolute top-3 left-3 bg-stone-900/80 backdrop-blur-md text-white text-[11px] font-label-md font-semibold px-2.5 py-1 rounded-md">防止誤食</span>
           </div>
+          <div class="p-5">
+            <h3 class="text-headline-sm font-headline-sm text-on-surface font-bold">上鎖式安全鼠餌盒</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">符合 HACCAP 規範。防止人員與寵物誤觸，黑色隱蔽設計增加老鼠取食意願。</p>
+          </div>
+        </div>
+        <div class="p-5 pt-0">
+          <a class="w-full py-2.5 px-4 bg-primary text-white hover:bg-stone-800 rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-colors" href="index.html#quick-order">
+            <span>立即選購</span>
+            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 強力黏鼠板 -->
+      <div class="bg-surface-container-lowest rounded-2xl border border-border-warm overflow-hidden flex flex-col justify-between custom-warm-shadow custom-hover-shadow transition-all duration-200">
+        <div>
+          <div class="aspect-[4/3] bg-stone-100 relative overflow-hidden">
+            <img class="w-full h-full object-contain" src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=large+yellow+sticky+mouse+trap+board+neatly+displayed+on+a+clean+concrete+surface&image_size=landscape_4_3">
+            <span class="absolute top-3 left-3 bg-[#D97706] text-white text-[11px] font-label-md font-semibold px-2.5 py-1 rounded-md">特強黏性</span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-headline-sm font-headline-sm text-on-surface font-bold">強力黏鼠板 (特大號)</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">專業 PCO 等級黏膠。耐低溫不流動，大面積捕捉效果更佳，拋棄式設計衛生便利。</p>
+          </div>
+        </div>
+        <div class="p-5 pt-0">
+          <a class="w-full py-2.5 px-4 bg-primary text-white hover:bg-stone-800 rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-colors" href="index.html#quick-order">
+            <span>立即選購</span>
+            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 吸入式捕蚊燈 -->
+      <div class="bg-surface-container-lowest rounded-2xl border border-border-warm overflow-hidden flex flex-col justify-between custom-warm-shadow custom-hover-shadow transition-all duration-200">
+        <div>
+          <div class="aspect-[4/3] bg-stone-100 relative overflow-hidden">
+            <img class="w-full h-full object-contain" src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=modern+minimalist+black+electronic+mosquito+trap+lamp+with+soft+blue+UV+light+in+a+cafe+interior&image_size=landscape_4_3">
+            <span class="absolute top-3 left-3 bg-[#15803D] text-white text-[11px] font-label-md font-semibold px-2.5 py-1 rounded-md">物理滅蚊</span>
+          </div>
+          <div class="p-5">
+            <h3 class="text-headline-sm font-headline-sm text-on-surface font-bold">電子吸入式捕蚊燈</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">靜音渦流吸入。UV 特殊波長誘蚊，無電擊噪音，適合咖啡廳與餐廳外場環境。</p>
+          </div>
+        </div>
+        <div class="p-5 pt-0">
+          <a class="w-full py-2.5 px-4 bg-primary text-white hover:bg-stone-800 rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-colors" href="index.html#quick-order">
+            <span>立即選購</span>
+            <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+          </a>
         </div>
       </div>
     </div>
@@ -172,13 +248,18 @@
 </main>
 
 <footer class="w-full bg-surface-linen border-t border-border-warm py-12 text-center">
-  <div class="max-w-[1360px] mx-auto px-gutter-lg">
+  <div class="max-w-[1360px] mx-auto px-gutter-lg text-center">
     <div class="flex flex-col items-center gap-4">
       <div class="flex items-center gap-2.5">
         <div class="w-8 h-8 rounded bg-primary text-surface flex items-center justify-center font-bold text-sm">侑</div>
         <span class="text-headline-sm font-headline-sm font-bold text-on-surface">侑安國際</span>
       </div>
-      <p class="text-body-sm text-on-surface-variant">© 2026 侑安國際有限公司</p>
+      <p class="text-body-sm text-on-surface-variant">© 2026 侑安國際有限公司 You-An Commercial Logistics Co., Ltd.</p>
+      <div class="flex gap-6 mt-4">
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="index.html">首頁</a>
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="packaging.html">營業用包材</a>
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="pest-control.html">環境衛生除蟲</a>
+      </div>
     </div>
   </div>
 </footer>
